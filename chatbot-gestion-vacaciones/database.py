@@ -1,29 +1,30 @@
 # database.py
 import json
 
-# Base de datos simulada (Simulación de Persistencia)
+# Base de datos simulada alineada estrictamente con el esquema del proyecto
 BD_EMPLEADOS = {
-    101: {"nombre": "Carlos Gomez",  "area": "Desarrollo", "Saldo_vacaciones": 14},
-    102: {"nombre": "Ana Martínez",  "area": "QA", "Saldo_vacaciones": 7},
-    103: {"nombre": "Luis Pérez ",  "area": "Soporte", "Saldo_vacaciones": 21}
+    "1001": {"nombre": "Carlos Gomez", "area": "Desarrollo", "saldo_dias": 14, "estado_fsm": "INICIO"},
+    "1002": {"nombre": "Ana Martínez", "area": "QA", "saldo_dias": 7, "estado_fsm": "INICIO"},
+    "1003": {"nombre": "Luis Pérez", "area": "Soporte", "saldo_dias": 21, "estado_fsm": "INICIO"}
 }
 
 # Historial de solicitudes procesadas para auditoría
 BD_SOLICITUDES = []
 
-def obtener_empleado(legajo: int):
-    """Busca un empleado por su número de legajo."""
-    return BD_EMPLEADOS.get(legajo)
+def obtener_empleado(legajo: str):
+    """Busca un empleado por su número de legajo (String)."""
+    return BD_EMPLEADOS.get(str(legajo).strip())
 
-def actualizar_saldo_y_solicitud(legajo: int, dias: int, estado: str):
-    """Modifica el saldo del empleado y registra la auditoría."""
-    if legajo in BD_EMPLEADOS:
-        if estado == "APROBADO":
-            BD_EMPLEADOS[legajo]["Saldo_vacaciones"] -= dias
+def actualizar_saldo_y_solicitud(legajo: str, dias: int, estado: str):
+    """Modifica el saldo de días e impacta el historial histórico."""
+    empleado = obtener_empleado(legajo)
+    if empleado:
+        if estado == "APROBADA":
+            empleado["saldo_dias"] -= dias
         
         nueva_solicitud = {
-            "id_solicitud": len(BD_SOLICITUDES) + 1,
-            "legajo": legajo,
+            "legajo": str(legajo).strip(),
+            "nombre": empleado["nombre"],
             "dias_solicitados": dias,
             "estado": estado
         }

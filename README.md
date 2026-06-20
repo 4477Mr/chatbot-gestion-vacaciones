@@ -1,7 +1,7 @@
-# Trabajo Práctico Integrador (TPI) Organización Empresarial | Tecnicatura Universitaria en Programación (TUP)
+# Trabajo Práctico Integrador (TPI) | Tecnicatura Universitaria en Programación (TUP)
 ## 🤖 Sistema Automatizado de Gestión de Vacaciones (Chatbot Simulado)
 
-#Este repositorio contiene la entrega del proyecto integrador, desarrollado íntegramente en un entorno híbrido de **Google Colab** y versionado en **GitHub**. El objetivo principal es actuar como consultores tecnológicos, tomando un proceso manual e ineficiente para transformarlo en una solución automatizada mediante un chatbot basado en una **Máquina de Estados Finitos (FSM)** y alineado de forma estricta a un modelo de procesos **BPMN 2.0**.
+Este repositorio contiene la entrega del proyecto integrador, desarrollado íntegramente en un entorno híbrido de **Google Colab** y versionado en **GitHub**. El objetivo principal es actuar como consultores tecnológicos, tomando un proceso manual e ineficiente para transformarlo en una solución automatizada mediante un chatbot basado en una **Máquina de Estados Finitos (FSM)** y alíneado de forma estricta a un modelo de procesos **BPMN 2.0**.
 
 ---
 

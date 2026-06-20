@@ -1,0 +1,2 @@
+# Dependencias del proyecto
+# No requiere librerías externas si usas la biblioteca estándar de Python

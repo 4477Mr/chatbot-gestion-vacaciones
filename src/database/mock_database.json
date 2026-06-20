@@ -1,0 +1,6 @@
+{
+    "empleados": {
+        "1001": {"nombre": "Juan Pérez", "saldo_dias": 14, "estado_fsm": "INICIO"}
+    },
+    "solicitudes_aprobadas": []
+}

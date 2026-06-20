@@ -1,5 +1,5 @@
 # docs/diccionario_datos.md
-"""# Diccionario de Datos - Sistema de Gestión de Vacaciones
+# Diccionario de Datos - Sistema de Gestión de Vacaciones
 
 Este documento detalla la estructura y restricciones de la persistencia simulada utilizada por el Chatbot de Recursos Humanos.
 
@@ -22,4 +22,4 @@ Colección histórica que almacena las transacciones procesadas por el Chatbot p
 | `legajo` | `Integer` | Legajo del empleado que realiza la solicitud. | Llave foránea vinculada a `BD_EMPLEADOS`. |
 | `dias_solicitados`| `Integer` | Cantidad de días requeridos en la sesión. | Debe ser menor o igual al saldo actual. |
 | `estado` | `String` | Estado final del ciclo de vida de la transacción. | Valores: `APROBADO`, `RECHAZADO_SALDO`. |
-"""
+

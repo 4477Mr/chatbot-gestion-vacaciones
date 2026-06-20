@@ -1,4 +1,4 @@
-# docs/diccionario_datos.md
+
 # Diccionario de Datos - Sistema de Gestión de Vacaciones
 
 Este documento detalla la estructura y restricciones de la persistencia simulada utilizada por el Chatbot de Recursos Humanos.

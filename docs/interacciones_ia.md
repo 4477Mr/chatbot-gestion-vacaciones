@@ -1,4 +1,4 @@
-# docs/interacciones_ia.md
+
 # Registro de Consultas a Herramientas de IA
 
 [Ejemplo 1: Generación de la estructura base (FSM)
